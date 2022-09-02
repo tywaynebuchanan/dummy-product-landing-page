@@ -9,9 +9,14 @@
     --yellow: #F1C40E;
 }
 
+li{
+    list-style-type: none;
+}
+
 
 body {
     background-color: var(--grey);
+    font-family: "Poppins", sans-serif;
 }
 
 header .nav{
@@ -44,6 +49,10 @@ ul li a{
     width: 300px;
 }
 
+.header_text h1{
+    font-weight: 400;
+}
+
 .section{
     width: 1100px;
     margin: 0 auto;
@@ -60,13 +69,25 @@ ul li a{
     row-gap: 10px;
 }
 
+input[type=text]{
+    padding: 10px 20px;
+    border: 1px solid #aaaa;
+    outline: none;
+    cursor: pointer;
+   
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
 .btn{
     background-color: var(--yellow);
     outline:none;
     border:none;
     color: black;
     cursor: pointer;
-    padding: 2px 30px;
+    padding: 5px 30px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -78,13 +99,68 @@ ul li a{
 
 .container{
 
-   width: 700px;
-   margin: 150px auto;
+   width: 1150px;
+  margin: 0 auto;
+  padding-top: 100px;
 
 }
 .container h1{
-    margin-top:20px ;
+    margin-top:20px;
+    font-weight: 600;
 }
 
+.product_info{
+  display: flex;
+  gap: 60px;
+  padding-bottom: 30px;
+
+    
+}
+
+.product_info .icon{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+
+}
+
+.price_section{
+    padding-top: 50px;
+    width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 20px;
+}
+
+.price_info{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 20px;
+    
+}
+
+.price_title{
+    background-color:grey;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product_detials li{
+    padding: 5px;
+}
+
+.btn_select{
+    margin-bottom: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 40px;
+}
 
 
